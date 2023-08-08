@@ -1,0 +1,74 @@
+<% layout('layouts/boilerplate') %>
+    <div class="container">
+        <div class="calendar">
+            <div class="this-week">
+                <h2>This Week</h2>
+            </div>
+            <div class="days">
+                <div class="monday-container">
+                    <h3>Monday</h3>
+                    <ul id="monday">
+                     <% for(let task of tasks) { if(task.day === 'Monday') { %>
+                        <p><%=task.title%></p>
+                     <% }} %>
+                    </ul>
+                    <button><a href="tasks/new">Add Task</a></button>
+                </div>
+                <div class="tuesday-container">
+                    <h3>Tuesday</h3>
+                    <ul class="tuesday">
+                        <% for(let task of tasks) { if(task.day === 'Tuesday') { %>
+                            <p><%=task.title%></p>
+                         <% }} %>
+                    </ul>
+                    <button><a href="tasks/new">Add Task</a></button>
+                </div>
+                <div class="wednesday-container">
+                    <h3>Wednesday</h3>
+                    <ul class="wednesday">
+                        <% for(let task of tasks) { if(task.day === 'Wednesday') { %>
+                            <p><%=task.title%></p>
+                         <% }} %>
+                    </ul>
+                    <button><a href="tasks/new">Add Task</a></button>
+                </div>
+                <div class="thursday-container">
+                    <h3>Thursday</h3>
+                    <ul class="thursday">
+                        <% for(let task of tasks) { if(task.day === 'Thursday') { %>
+                            <p><%=task.title%></p>
+                         <% }} %>
+                    </ul>
+                    <button><a href="tasks/new">Add Task</a></button>
+                </div>
+                <div class="friday-container">
+                    <h3>Friday</h3>
+                    <ul class="friday">
+                        <% for(let task of tasks) { if(task.day === 'Friday') { %>
+                            <p><%=task.title%></p>
+                         <% }} %>
+                    </ul>
+                    <button><a href="tasks/new">Add Task</a></button>
+                </div>
+                <div class="saturday-container">
+                    <h3>Saturday</h3>
+                    <ul class="saturday">
+                        <% for(let task of tasks) { if(task.day === 'Saturday') { %>
+                            <p><%=task.title%></p>
+                         <% }} %>
+                    </ul>
+                    <button><a href="tasks/new">Add Task</a></button>
+                </div>
+                <div class="sunday-container">
+                    <h3>Sunday</h3>
+                    <ul class="sunday">
+                        <% for(let task of tasks) { if(task.day === 'Sunday') { %>
+                            <p><%=task.title%></p>
+                         <% }} %>
+                    </ul>
+                    <button><a href="tasks/new">Add Task</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>

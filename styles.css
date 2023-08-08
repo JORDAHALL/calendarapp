@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    box-sizing: inherit;
+    position: relative;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#5E5D5C, #28112B);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.calendar {
+    position: fixed;
+    margin-top: 12.5vh;
+    margin-left: 12.5vw;
+    background-color: #8DAA91;
+    height: 75vh;
+    width: 75vw;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    box-shadow: inset .2rem .2rem .5rem white, inset -.2rem -.2rem .5rem white;
+}
+
+.this-week {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h2 {
+    padding: 1rem;
+    font-size: 4rem;
+    color: white;
+}
+
+.days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    padding: .5rem;
+}
+
+button {
+    border: none;
+    background-color: #788475;
+    padding: .5rem;
+    width: 5vw;
+    margin: 1rem;
+    transition: .5s ease-out;
+}
+
+button:hover {
+    transform: translateY(-.5rem);
+    box-shadow: 0 .2rem .5rem #28112B;
+    background-color: #453643;
+    border-radius: 1rem;
+}
+
+button:after {
+    transform: translateY(-.25rem);
+}
+
+.days div {
+    width: 9vw;
+    height: 65vh;
+    background-color: #788475;
+    font-size: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 .1rem .5rem #5E5D5C;
+    position: relative;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    transform: translateY(5rem);
+}
+
+p {
+    color: white;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+form {
+    font-size: 2rem;
+}
+
+.back-btn {
+    color: black;
+    font-size: 2rem;
+}
